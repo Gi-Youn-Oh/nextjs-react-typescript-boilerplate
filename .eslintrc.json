@@ -1,0 +1,18 @@
+{
+    "extends" : [
+        "@titicaca/eslint-config-triple",
+        "next/core-web-vitals",
+        "@titicaca/eslint-config-triple/requiring-type-checking",
+        "@titicaca/eslint-config-triple/frontend",
+        "@titicaca/eslint-config-triple/prettier"
+    ],
+    "rules": {
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "camelcase": ["error", {
+            "ignoreDesctructuring": true,
+            "ignoreImports" : true,
+            "ignoreGlobals": true
+        }]
+    }
+}
